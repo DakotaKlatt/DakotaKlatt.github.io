@@ -1,0 +1,111 @@
+
+/* Split the screen in half */
+header{
+    padding-top: 0;
+    position: fixed;
+    font-size:  1.5em;
+    z-index: 1;
+}
+.head {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+
+    padding-bottom: 100%;
+}
+.name{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    width: 50%;
+    font-size: 2em;
+    padding-left:.5em;
+    padding-top: 0em;
+    text-align: left;
+    left: 0;
+}
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: darkgrey;
+}
+
+/* selected link */
+a:active {
+    color: white;
+}
+
+.links{
+    text-align: right;
+    width: 50%;
+    right: 0;
+    padding-top:.25em;
+    padding-right: .5em;
+
+}
+.link{
+    text-decoration: none;
+    padding:1em;
+}
+
+.split {
+    padding-top: 5em;
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+
+    padding-bottom: 100%;
+}
+
+.left{
+    background-color: #2abd6e;
+    left: 0;
+    text-align: left;
+    height: auto;
+}
+.left .shape{
+    text-align: center;
+
+    margin: auto;
+    height: 40em;
+    width: 40em;
+    background-color: #2568ff;
+    border-radius: 50%;
+}
+.pic{
+    background-image: url("jeep.png");
+    z-index: 1;
+    text-align: center;
+    width: 17em;
+    height: 17em;
+    margin-top: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+.right{
+    background-color: #2568ff;
+    right: 0;
+    text-align: right;
+    height: auto;
+}
+
+.right .shape{
+    text-align: center;
+    margin: auto;
+    height: 40em;
+    width: 40em;
+    background-color: #2abd6e;
+    border-radius: 10%;
+}
