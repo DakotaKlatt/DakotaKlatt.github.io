@@ -1,36 +1,143 @@
 
-/* Split the screen in half */
-header{
-    padding-top: 0;
-    position: fixed;
-    font-size:  1.5em;
+.button {
+    background-color: white; /* Green */
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 100%;
+    position: absolute;
+}
+
+body{
+    background-image: url("USAMap.png");
+    background-size: 75% ;
+    background-repeat: no-repeat;
+}
+
+.washington{
+    margin-left: 110px;
+    margin-top: 20px;
+}
+.oregon{
+    margin-left: 90px;
+    margin-top: 90px;
+}
+.california{
+    margin-left: 60px;
+    margin-top: 270px;
+}
+.nevada{
+    margin-left: 130px;
+    margin-top: 230px;
+}
+.montana{
+    margin-left: 280px;
+    margin-top: 50px;
+}
+.idaho{
+    margin-left: 180px;
+    margin-top: 110px;
+}
+.utah{
+    margin-left: 210px;
+    margin-top: 210px;
+}
+.wyoming{
+    margin-left: 295px;
+    margin-top: 145px;
+}
+.arizona{
+    margin-left: 200px;
+    margin-top: 360px;
+}
+.newMexico{
+    margin-left: 300px;
+    margin-top: 320px;
+}
+.colorado{
+    margin-left: 315px;
+    margin-top: 230px;
+}
+.texas{
+    margin-left: 400px;
+    margin-top: 390px;
+}
+.oklahoma{
+    margin-left: 460px;
+    margin-top: 355px;
+}
+.kansas{
+    margin-left: 473px;
+    margin-top: 273px;
+}
+
+.button {
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
+
+.button:hover {
+    background-color: black; /* Green */
+    color: white;
+}
+
+
+
+
+/* Popup container */
+.popup {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    margin-left:1000px;
+    margin-top:400px;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
     z-index: 1;
-}
-.head {
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: -1;
-    top: 0;
-
-    padding-bottom: 100%;
-}
-.name{
-    font-family: Brush Script MT, Brush Script Std, cursive;
-    width: 50%;
-    font-size: 2em;
-    padding-left:.5em;
-    padding-top: 0em;
-    text-align: left;
-    left: 0;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    
 }
 
-.map{
-    font-family: Brush Script MT, Brush Script Std, cursive;
-    width: 50%;
-    font-size: 6em;
-    padding-left:.5em;
-    padding-top: 0em;
-    text-align: left;
-    left: 0;
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
 }

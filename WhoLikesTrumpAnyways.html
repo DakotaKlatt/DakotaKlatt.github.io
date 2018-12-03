@@ -6,14 +6,34 @@
     <link rel="stylesheet" type="text/css" href="trumpStyle.css">
 </head>
 <body>
-    <header>
-        <div class="name head">Big Data Project</div>
-    </header>
     <div class = "map">
-        <p>
-            
-        </p>
+        <button class = "button washington" type="button" onclick="myFunction()"></button>
+        <button class = "button oregon" type="button" onclick="myFunction()"></button>
+        <button class = "button california" type="button" onclick="myFunction()"></button>
+        <button class = "button nevada" type="button" onclick="myFunction()"></button>
+        <button class = "button idaho" type="button" onclick="myFunction()"></button>
+        <button class = "button montana" type="button" onclick="myFunction()"></button>
+        <button class = "button utah" type="button" onclick="myFunction()"></button>
+        <button class = "button wyoming" type="button" onclick="myFunction()"></button>
+        <button class = "button arizona" type="button" onclick="myFunction()"></button>
+        <button class = "button newMexico" type="button" onclick="myFunction()"></button>
+        <button class = "button colorado" type="button" onclick="myFunction()"></button>
+        <button class = "button texas" type="button" onclick="myFunction()"></button>
+        <button class = "button oklahoma" type="button" onclick="myFunction()"></button>
+        <button class = "button kansas" type="button" onclick="myFunction()"></button>
+
+
     </div>
+    <div class="popup" onclick="myFunction()">Click me!
+        <span class="popuptext" id="myPopup">Popup text...</span>
+    </div>
+    <script>
+        // When the user clicks on <div>, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
 
 </body>
 </html>
