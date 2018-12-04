@@ -15,6 +15,14 @@ body{
     background-size: 75% ;
     background-repeat: no-repeat;
 }
+#rectangle{
+    position: absolute;
+    width:200px;
+    height:200px;
+    background:white;
+    margin-left: 845px;
+    margin-top: 450px;
+}
 
 .washington{
     margin-left: 110px;
@@ -66,15 +74,15 @@ body{
 }
 .oklahoma{
     margin-left: 460px;
-    margin-top: 355px;
+    margin-top: 350px;
 }
 .kansas{
-    margin-left: 473px;
-    margin-top: 273px;
+    margin-left: 470px;
+    margin-top: 268px;
 }
 .nebraska{
-    margin-left: 430px;
-    margin-top: 225px;
+    margin-left: 428px;
+    margin-top: 222px;
 }
 .nDakota{
     margin-left: 415px;
@@ -89,16 +97,16 @@ body{
     margin-top: 125px;
 }
 .iowa{
-    margin-left: 520px;
-    margin-top: 176px;
+    margin-left: 517px;
+    margin-top: 174px;
 }
 .missouri{
     margin-left: 540px;
     margin-top: 250px;
 }
 .arkansas{
-    margin-left: 550px;
-    margin-top: 367px;
+    margin-left: 545px;
+    margin-top: 362px;
 }
 .louisiana{
     margin-left: 550px;
@@ -109,35 +117,35 @@ body{
     margin-top: 367px;
 }
 .tennesse{
-    margin-left: 612px;
-    margin-top: 325px;
+    margin-left: 605px;
+    margin-top: 320px;
 }
 .kentucky{
-    margin-left: 650px;
-    margin-top: 290px;
+    margin-left: 645px;
+    margin-top: 285px;
 }
 .indiana{
-    margin-left: 653px;
+    margin-left: 648px;
     margin-top: 248px;
 }
 .illinois{
-    margin-left: 608px;
+    margin-left: 605px;
     margin-top: 260px;
 }
 .wisconsin{
-    margin-left: 590px;
+    margin-left: 585px;
     margin-top: 160px;
 }
 .michigan{
-    margin-left: 670px;
-    margin-top: 178px;
+    margin-left: 665px;
+    margin-top: 175px;
 }
 .alabama{
     margin-left: 660px;
     margin-top: 363px;
 }
 .ohio{
-    margin-left: 705px;
+    margin-left: 697px;
     margin-top: 235px;
 }
 .georgia{
@@ -145,31 +153,31 @@ body{
     margin-top: 400px;
 }
 .westVirginia{
-    margin-left: 745px;
-    margin-top: 263px;
+    margin-left: 740px;
+    margin-top: 260px;
 }
 .pennsylvania{
     margin-left: 780px;
-    margin-top: 205px;
+    margin-top: 202px;
 }
 .newYork{
-    margin-left: 833px;
+    margin-left: 828px;
     margin-top: 120px;
 }
 .virginia{
-    margin-left: 778px;
-    margin-top: 278px;
+    margin-left: 769px;
+    margin-top: 273px;
 }
 .nCarolina{
-    margin-left: 760px;
-    margin-top: 306px;
+    margin-left: 753px;
+    margin-top: 303px;
 }
 .sCarolina{
-    margin-left: 756px;
-    margin-top: 343px;
+    margin-left: 750px;
+    margin-top: 338px;
 }
 .florida{
-    margin-left: 765px;
+    margin-left: 760px;
     margin-top: 443px;
 }
 .alaska{
@@ -181,43 +189,43 @@ body{
     margin-top: 570px;
 }
 .maine{
-    margin-left: 905px;
+    margin-left: 895px;
     margin-top: 45px;
 }
 .massachusetts{
-    margin-left: 1010px;
+    margin-left: 1000px;
     margin-top: 122px;
 }
 .rhodeisland{
-    margin-left: 1010px;
-    margin-top: 156px;
+    margin-left: 1000px;
+    margin-top: 155px;
 }
 .connecticut{
-    margin-left: 985px;
-    margin-top: 175px;
+    margin-left: 975px;
+    margin-top: 172px;
 }
 .newjersey{
-    margin-left: 955px;
+    margin-left: 948px;
     margin-top: 192px;
 }
 .delaware{
-    margin-left: 958px;
-    margin-top: 218px;
+    margin-left: 952px;
+    margin-top: 215px;
 }
 .dc{
-    margin-left: 997px;
-    margin-top: 235px;
+    margin-left: 990px;
+    margin-top: 232px;
 }
 .maryland{
-    margin-left: 932px;
-    margin-top: 255px;
+    margin-left: 925px;
+    margin-top: 251px;
 }
 .nhampshire{
-    margin-left: 780px;
+    margin-left: 770px;
     margin-top: 54px;
 }
 .vermont{
-    margin-left: 800px;
+    margin-left: 790px;
     margin-top: 75px;
 }
 
@@ -248,7 +256,7 @@ body{
 /* The actual popup (appears on top) */
 .popup .popuptext {
     visibility: hidden;
-    width: 160px;
+    width: 130px;
     background-color: #555;
     color: #fff;
     text-align: center;
@@ -262,17 +270,7 @@ body{
     
 }
 
-/* Popup arrow */
-.popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
+
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
