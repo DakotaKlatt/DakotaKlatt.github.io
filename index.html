@@ -1,46 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Dakota Klatt</title>
-    <link rel="stylesheet" type="text/css" href="mainStyle.css">
-</head>
-<body>
-    <header>
-        <div class="name head">Dakota Klatt</div>
-        <div class="links head">
-            <a class="link" href="contact.html">Contact</a>\
-            <a class="link" href="projects.html">Projects</a>
-        </div>
-    </header>
+<html>
+  <head>
+    <link href="/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Lobster" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="page.css">
+    <link rel="shortcut icon" href="spartan-helmet-og.ico" type="image/x-icon" />
+    <title> Dakota Klatt </title>
+  </head>
+  <body>
 
-    <div class="split left">
-        <div class=" left shape">
+  <header>
+    <img class="Portrait" src="jeep.jpg" alt="Self Portrait" height="200" width="200">
+    <h1> Dakota Klatt </h1>
+    <h2 id="location"> Okemos, MI | (715) 587-6925 | klattdak@msu.edu </h2>
+  </header>
 
-            <a class="link" href="aboutMe.html">About Me</a>
-            <div class="pic">
+<br>
 
-            </div>
+  <div class="Buttons">
+    <button id="about" onclick="aboutFunction()" title="About Me!"> About </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button id="education" onclick="educationFunction()" title="Education"> Education </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button id="project" onclick="projectsFunction()" title="Projects"> Projects </button>
+  </div>
 
-        </div>
+  <div class="About">
+    <h2 id="about me"> About Me </h2>
+    <p>HEY! I'm Highly Motivated Software and Mobile Application Developer. I'm interested in all types of development but am primarily focused on Mobile Application Development and Autonomous Vehicles. I am also interested in Social Media marketing.</p>
+  </div>
 
-    </div>
+<br>
 
-    <div class="split right">
-        <div class=" right shape">
-            <div class="temp">
-                    <a class="link" href="contact.html">Contact</a>\
-                    <a class="link" href="projects.html">Projects</a>
-                </div>
-            <a class="link" href="contact.html">Contact</a>\
-            <a class="link" href="projects.html">
-                test
-                <!--<div class = "video project label">Projects</div>
-                    <embed src="empty.png" width="325" height="230"  />
-                -->
-            </a>
-        </div>
+  <div class="Education">
+    <h2 id="edu"> Education </h2>
+    <dl>
+      <dt> Michigan State University (2015-2019) </dt>
+       <dd> &nbsp;&nbsp;&nbsp;&nbsp;B.S., Computer Science </dd>
+        <dd> &nbsp;&nbsp;&nbsp;&nbsp;Cognate Psychology</dd>
+    </dl>
+  </div>
 
-    </div>
-</body>
+<br>
+
+
+
+  <div class="Projects">
+    <h2 id="proj"> Projects </h2>
+    <dl>
+      <dt> <a class="link" href="WhoLikesTrumpAnyways.html">Who Likes Trump Anyways?</a> </dt>
+        <dd> &nbsp;&nbsp;&nbsp;&nbsp;A simple project that uses Big Data concepts. The project consits of collecting data from tweets that involve the key work "Trump" and then performing sentament anaylsis techniques to class as positive and negative. </dd>
+    </dl>
+    <dl>
+      <dt> Dive </dt>
+        <dd> &nbsp;&nbsp;&nbsp;&nbsp;•	A mobile application game for android and iOS. Currently in the developmental stage for android marketplace. The game consists of tilting and tapping the device to avoid obstacles. The game is being developed in java and Flutter. </dd>
+    </dl>
+    <dl>
+      <dt> Web Design </dt>
+        <dd> &nbsp;&nbsp;&nbsp;&nbsp;•	A Simple personal website in constant development. The site is designed to show-off current and past projects as well as to gain some experience in web development. The site contains projects that pertain to programming and personal hobbies. Currently this site is under major renovation. I am transitioning the site from a simple HTML/CSS design to a more dynamic site using React. </dd>
+    </dl>
+  </div>
+
+<br>
+
+  
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <!-- JavaScript in page.js -->
+  <script src="page.js"></script>
+
+  </body>
 </html>
