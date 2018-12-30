@@ -33,11 +33,7 @@ function workFunction() {
   elmnt.scrollIntoView();
 }
 
-// When user clicks button, scroll to Certifications section
-function certFunction() {
-  var elmnt = document.getElementById("certs");
-  elmnt.scrollIntoView();
-}
+
 
 // When user clicks button, scroll to Projects section
 function projectsFunction() {

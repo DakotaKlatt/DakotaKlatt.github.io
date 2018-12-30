@@ -1,0 +1,111 @@
+
+body{
+    background: #fffbe3;
+}
+
+
+
+
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.banner-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("newSkyline.jpg");
+
+  /* Set a specific height */
+  height: 60%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.headerLabel{
+font-size: 28px;
+font-style:bold;
+}
+
+
+
+/*header content*/
+.header {
+    padding: 20px;
+    text-align: left;
+    background: #fffbe3;
+    color: #666547;
+}
+/*company name attributes*/
+.name{
+    font-size: 50px;
+    display: inline-block;
+    
+}
+
+/* Page content */
+.content {
+padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+position: fixed;
+top: 0;
+width: 97%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  top: 0;
+  width: 100%;
+}
+
+.container {
+
+    cursor: pointer;
+    float:right;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #666547;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  /* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+  .menuBox{
+    opacity: 0;
+  }
+
+  .change .container{
+
+    padding:100px;
+    transition: 0.4s;
+    background-color: red;
+ 
+  }
+
+  .change .menuBox {
+    opacity:100;
+    transition: 0.4s;
+    background-color: red;
+  }
